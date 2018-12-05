@@ -4,22 +4,22 @@ A progress bar that shows you how far you are down a page. When reading an artic
 #installation
 You can choose to either download this repo and import the progress-scroll.js file in your project yourself, or use NPM to install it.
 
-* NPM *
+**NPM**
 ```npm install weichie-progress-scroll```
 
 #usage
 Call the progress_scroll function wherever you like, like this:
-*Javascript*
+**Javascript**
 ```javascript
 progress_scroll({
-	scroll_bar: document.getElementById('progress-scroll'),
-	article: document.getElementsByClassName('container')
+   scroll_bar: document.getElementById('progress-scroll'),
+   article: document.getElementsByClassName('container')
 });
 ```
-*jQuery*
+**jQuery**
 ```javascript
 progress_scroll({
-	scroll_bar: $('#progress-scroll'),
-	article: $('.container')
+   scroll_bar: $('#progress-scroll'),
+   article: $('.container')
 });
 ```
