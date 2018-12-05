@@ -1,11 +1,4 @@
-document.addEventListener("DOMContentLoaded",function(){
-	progress_scroll({
-		scroll_bar: document.getElementById('progress-scroll'),
-		article: document.getElementsByClassName('container')
-	});
-});
-
-progress_scroll = ({scroll_bar = '', article = ''}) => {
+exports.ProgressScroll = ({scroll_bar = '', article = ''}) => {
 	window.addEventListener('scroll', () => {
 		const fromTop = window.scrollY | 0;
 		const fromBottom = window.scrollY + window.innerHeight | 0;

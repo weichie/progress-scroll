@@ -1,0 +1,24 @@
+{
+  "name": "weichie-progress-scroll",
+  "version": "1.0.0",
+  "description": "A simple progress bar on scroll to indicate article length",
+  "main": "progress-scroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weichie/progress-scroll.git"
+  },
+  "keywords": [
+    "scroll",
+    "indicator",
+    "onscroll"
+  ],
+  "author": "Bob Weichler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weichie/progress-scroll/issues"
+  },
+  "homepage": "https://github.com/weichie/progress-scroll#readme"
+}

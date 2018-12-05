@@ -8,22 +8,24 @@ A progress bar that shows you how far you are down a page. When reading an artic
 # Installation
 You can choose to either download this repo and import the progress-scroll.js file in your project yourself, or use NPM to install it.
 
-**NPM**
+**NPM**\
 ```npm install weichie-progress-scroll```
 
+```import { ProgressScroll } from 'weichie-progress-scroll';```
+
 # Usage
-Call progress_scroll() wherever you like. The function requires 2 parameters, a *scroll_bar* that will be your custom element you want to use as scroll indicator. The *article* will be used to measure the height of the article you're reading.
+Call ProgressScroll() wherever you like. The function requires 2 parameters, a *scroll_bar* that will be your custom element you want to use as scroll indicator. The *article* will be used to measure the height of the article you're reading.
 
 **Javascript**
 ```javascript
-progress_scroll({
+ProgressScroll({
    scroll_bar: document.getElementById('progress-scroll'),
    article: document.getElementsByClassName('container')
 });
 ```
 **jQuery**
 ```javascript
-progress_scroll({
+ProgressScroll({
    scroll_bar: $('#progress-scroll'),
    article: $('.container')
 });
