@@ -31,7 +31,7 @@ img{
 }
 #progress-scroll{
 	position: fixed;
-	top: 0; width: 100%;
+	top: 0; width: 0;
 	background: #044F67;
-	height: 4px;
+	height: 5px;
 }

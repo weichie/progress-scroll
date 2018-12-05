@@ -1,18 +1,19 @@
-$(function(){
-	console.log('loaded.');
+document.addEventListener("DOMContentLoaded",function(){
 	progress_scroll({
-		element: $('#progress-scroll')
+		scroll_bar: document.getElementById('progress-scroll'),
+		article: document.getElementsByClassName('container')
 	});
 });
 
-progress_scroll = ({element = ''}) => {
-	window.addEventListener('scroll', function(e){
-		let fromTop = window.scrollY | 0;
-		let fromBottom = window.scrollY + window.innerHeight | 0;
+progress_scroll = ({scroll_bar = '', article = ''}) => {
+	window.addEventListener('scroll', () => {
+		const fromTop = window.scrollY | 0;
+		const fromBottom = window.scrollY + window.innerHeight | 0;
 
-		if(element.length){
-			console.log('found!');
-			// console.log('found');
+		if(scroll_bar !== null && article !== null){
+			const article_start = article[0].offsetTop;
+			const scrolled = ((fromTop - article_start) / (article[0].offsetHeight - window.innerHeight)) * 100;
+			scroll_bar.style.width = `${(scrolled >= 0) ? scrolled : 0}%`;
 		}
 	});
 }
